@@ -1,9 +1,6 @@
-const optionMenu = document.querySelector('.bx-menu')
+const primaryNav = document.querySelector('.nav-link');
+const navToggle = document.getElementById('menu-icon');
 
-optionMenu.addEventListener('click', ()=>{
-    const ulEl = document.querySelector('.nav-link')
-    const headerEl = document.getElementById('header')
-    ulEl.classList.toggle('active')
-    headerEl.classList.toggle('active')
-    
+navToggle.addEventListener('click', ()=> {
+  primaryNav.classList.toggle("active");
 })
