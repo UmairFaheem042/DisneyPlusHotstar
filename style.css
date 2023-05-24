@@ -72,7 +72,7 @@ header .left-head {
   align-items: center;
 }
 
-.left-head ul {
+.left-head .nav-link {
   display: flex;
   gap: 2rem;
   margin: 0 2rem;
@@ -155,9 +155,12 @@ li {
 }
 
 .left-head .nav-link.active {
-  transform: translateX(100%);
-  transition: trasnform 0.3s;
+    display: none;
+    transform: translateX(100%);
+    transition: trasnform 0.3s;
 }
+
+
 
 main {
   padding: 1rem 2rem;
@@ -340,10 +343,7 @@ footer .links {
   cursor: pointer;
 }
 
-@media (max-width: 800px) {
-  body {
-    /*     background: red; */
-  }
+@media (max-width: 1000px) {
 
   .right-head .actions {
     display: none;
@@ -361,7 +361,6 @@ footer .links {
     flex-direction: column;
     padding: min(30vh, 10rem) 3rem;
     background: hsl(0 0% 0% / 0.75);
-    /*     gap: 5rem; */
   }
 
   @supports (backdrop-filter: blur(1rem)) {
